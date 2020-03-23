@@ -11,3 +11,90 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.footer-col {
+  float: left;
+  width: 100%;
+}
+
+.header-col {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For everything bigger than 768px */
+  .footer-col {
+    width: 33.33%;
+  }
+  .header-col {
+    display: flex;
+  }
+}
+
+/* regular */
+@font-face {
+  font-family: 'raleway-regular';
+  src: local('raleway-regular'), url(./components/fonts/Raleway-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'roboto-regular';
+  src: local('roboto-regular'), url(./components/fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'lato-regular';
+  src: local('lato-regular'), url(./components/fonts/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'eina01-regular';
+  src: local('eina01-regular'), url(./components/fonts/Eina01-Regular.ttf) format('truetype');
+}
+
+/* semibold */
+@font-face {
+  font-family: 'eina01-semibold';
+  src: local('eina01-semibold'), url(./components/fonts/Eina01-SemiBold.ttf) format('truetype');
+}
+
+/* bold */
+@font-face {
+  font-family: 'raleway-bold';
+  src: local('raleway-bold'), url(./components/fonts/Raleway-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'roboto-bold';
+  src: local('roboto-bold'), url(./components/fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'lato-bold';
+  src: local('lato-bold'), url(./components/fonts/Lato-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'eina01-bold';
+  src: local('eina01-bold'), url(./components/fonts/Eina01-Bold.ttf) format('truetype');
+}
+
+/* extra bold */
+@font-face {
+  font-family: 'raleway-extrabold';
+  src: local('raleway-extrabold'), url(./components/fonts/Raleway-ExtraBold.ttf) format('truetype');
+}
+
+/* logo */
+@font-face {
+  font-family: 'velocity';
+  src: local('velocity'), url(./components/fonts/Velocity.ttf) format('truetype');
+}
+
+/* icons */
+@font-face {
+  font-family: AntDesign;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./components/fonts/AntDesign.ttf) format('truetype');
+}
