@@ -3,12 +3,10 @@ import '../index.css';
 import constants from './constants/constants';
 import { AntDesign } from 'react-web-vector-icons';
 import Header from './Header';
-import Home1 from './Home1';
-import Home2 from './Home2';
-import Home3 from './Home3';
+import Mobile1 from './Mobile1';
 import Footer from './Footer';
 
-class Home extends Component {
+class Mobile extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -19,14 +17,12 @@ class Home extends Component {
     }
 
     render() {
-        console.log('render home');
+        console.log('render mobile');
 
         return (
-            <div style={styles.home}>
+            <div style={styles.mobile}>
                 <Header />
-                <Home1 />
-                <Home2 />
-                <Home3 />
+                <Mobile1 />
                 <Footer />
             </div>
         )
@@ -34,7 +30,7 @@ class Home extends Component {
 }
 
 const styles = ({
-    home: {
+    mobile: {
         display: 'flex',
         flexDirection: 'column',
         width: '100%',
@@ -42,4 +38,4 @@ const styles = ({
     },
 });
 
-export default Home;
+export default Mobile;

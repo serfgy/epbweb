@@ -19,9 +19,10 @@ class Home1 extends Component {
         return (
             <div style={styles.home1}>
                 <div style={styles.product}><span style={styles.product2}>epb</span><span className='clip-text'>OS</span><span style={styles.product3}>®</span></div>
-                <div style={styles.slogan}>The Operating System</div>
-                <div style={styles.slogan}>for your business.</div>
-                <div style={styles.afterSlogan}>Navigate the evolving future confidently with state of the art integrated ERP.</div>
+                <div style={styles.slogan}>Tailored to fit.</div>
+                <div style={styles.slogan}>Built to last.</div>
+                <div style={styles.slogan}>Engineered to scale.</div>
+                <div style={styles.afterSlogan}>Secure a brighter future with the foundation system that is truly yours.</div>
                 <div style={styles.buttonsContainer}>
                     <div style={styles.button}>REQUEST A DEMO</div>
                     <div style={styles.buttonReverse}>OUR SOLUTIONS</div>

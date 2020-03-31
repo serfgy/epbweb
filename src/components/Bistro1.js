@@ -3,7 +3,7 @@ import '../index.css';
 import constants from './constants/constants';
 import { AntDesign } from 'react-web-vector-icons';
 
-class Home1 extends Component {
+class Bistro1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -14,14 +14,14 @@ class Home1 extends Component {
     }
 
     render() {
-        console.log('render home1');
+        console.log('render bistro1');
 
         return (
-            <div style={styles.home1}>
-                <div style={styles.product}><span style={styles.product2}>epb</span><span className='clip-text'>OS</span><span style={styles.product3}>®</span></div>
-                <div style={styles.slogan}>The Operating System</div>
-                <div style={styles.slogan}>for your business.</div>
-                <div style={styles.afterSlogan}>Navigate the evolving future confidently with state of the art integrated ERP.</div>
+            <div style={styles.bistro1}>
+                <div style={styles.product}><span style={styles.product2}>bistro</span><span className='clip-text'>POS</span><span style={styles.product3}>®</span></div>
+                <div style={styles.slogan}>When running isn't enough.</div>
+                <div style={styles.slogan}>You have to wing it.</div>
+                <div style={styles.afterSlogan}>Cover all the bases with our integrated restaurant POS.</div>
                 <div style={styles.buttonsContainer}>
                     <div style={styles.button}>REQUEST A DEMO</div>
                     <div style={styles.buttonReverse}>OUR SOLUTIONS</div>
@@ -32,7 +32,7 @@ class Home1 extends Component {
 }
 
 const styles = ({
-    home1: {
+    bistro1: {
         width: '100%',
         maxWidth: 1000,
         height: '100vh',
@@ -102,4 +102,4 @@ const styles = ({
     },
 });
 
-export default Home1;
+export default Bistro1;

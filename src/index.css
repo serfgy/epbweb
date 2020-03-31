@@ -31,6 +31,12 @@ code {
   }
 }
 
+/* light */
+@font-face {
+  font-family: 'segoeui-light';
+  src: local('segoeui-light'), url(./components/fonts/Segoeui-Light.ttf) format('truetype');
+}
+
 /* regular */
 @font-face {
   font-family: 'raleway-regular';
@@ -97,4 +103,12 @@ code {
   font-style: normal;
   font-weight: 400;
   src: url(./components/fonts/AntDesign.ttf) format('truetype');
+}
+
+.clip-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/108/760/31/colorful-painting-artwork-swirl-wallpaper-preview.jpg");
+  background-size: contain;
 }

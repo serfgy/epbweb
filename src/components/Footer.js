@@ -23,10 +23,9 @@ class Footer extends Component {
                         <div style={{ flex: 1 }}>
                             <div style={styles.footerTitle}>Products</div>
                             <div style={styles.footerSubtitle}>epbOS</div>
-                            <div style={styles.footerSubtitle}>epbMobile</div>
+                            <div style={styles.footerSubtitle}>epbMOBILE</div>
                             <div style={styles.footerSubtitle}>bistroPOS</div>
                             <div style={styles.footerSubtitle}>Integrations</div>
-                            <div style={styles.footerSubtitle}>Pricing</div>
                         </div>
                         <div style={{ flex: 1 }}>
                             <div style={styles.footerTitle}>Developers</div>

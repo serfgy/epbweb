@@ -6,21 +6,28 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
+import System from './components/System';
+import Mobile from './components/Mobile';
+import Bistro from './components/Bistro';
 
 function App() {
   return (
     <div style={styles.app}>
       <Router>
         <Switch>
+          <Route path='/system'
+            render={(routeProps) => (
+              <System {...routeProps} />
+            )} />
+          <Route path='/mobile'
+            render={(routeProps) => (
+              <Mobile {...routeProps} />
+            )} />
+          <Route path='/bistro'
+            render={(routeProps) => (
+              <Bistro {...routeProps} />
+            )} />
           <Route path='/'
-            render={(routeProps) => (
-              <Home {...routeProps} />
-            )} />
-          <Route path='/contact'
-            render={(routeProps) => (
-              <Home {...routeProps} />
-            )} />
-          <Route path='/download'
             render={(routeProps) => (
               <Home {...routeProps} />
             )} />
@@ -32,9 +39,9 @@ function App() {
 
 const styles = ({
   app: {
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   },
 });
 
