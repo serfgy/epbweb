@@ -21,13 +21,56 @@ code {
   display: none;
 }
 
+.body-col-3 {
+  float: left;
+  width: 100%;
+}
+
+.body-col-2 {
+  float: left;
+  width: 100%;
+}
+
+.mobile-size-1 {
+  font-size: 72px;
+}
+
+.mobile-size-2 {
+  font-size: 48px;
+}
+
+.mobile-size-3 {
+  font-size: 48px;
+}
+
 @media only screen and (min-width: 768px) {
   /* For everything bigger than 768px */
   .footer-col {
     width: 33.33%;
   }
+
   .header-col {
     display: flex;
+  }
+
+  .body-col-3 {
+    width: 33.33%;
+  }
+
+  .body-col-2 {
+    width: 50%;
+  }
+
+  .mobile-size-1 {
+    font-size: 128px;
+  }
+  
+  .mobile-size-2 {
+    font-size: 84px;
+  }
+
+  .mobile-size-3 {
+    font-size: 64px;
   }
 }
 

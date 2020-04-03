@@ -20,19 +20,19 @@ class Home2 extends Component {
             <div style={styles.home2}>
                 <div style={styles.home2Left}>
                     <div style={styles.home2Title}>INTEGRATED ERP</div>
-                    <div style={styles.home2Subtitle}>One. Ecosystem.</div>
+                    <div style={styles.home2Subtitle}>One Ecosystem</div>
                     <div style={styles.home2Text}>Have a whole suite of apps at your fingertips by onboarding the EPB family. Never again
                     worry about customizations and integrations holding you back.</div>
                 </div>
                 <div style={styles.home2Right}>
-                    <div style={styles.home2Title}>LASTING USER CONFIDENCE</div>
-                    <div style={styles.home2Subtitle}>Companion For Growth</div>
+                    <div style={styles.home2Title}>LASTING CONFIDENCE</div>
+                    <div style={styles.home2Subtitle}>Growth Companion</div>
                     <div style={styles.home2Text}>Stay ahead of your competitors with an operating system that more than keeps up with changing
                     landscapes and evolving demands so you can focus on running your business.</div>
                 </div>
                 <div style={styles.home2Left}>
-                    <div style={styles.home2Title}>OPEN SOURCE</div>
-                    <div style={styles.home2Subtitle}>Proprietary Development</div>
+                    <div style={styles.home2Title}>PROPRIETARY DEVELOPMENT</div>
+                    <div style={styles.home2Subtitle}>Aggressive Progression</div>
                     <div style={styles.home2Text}>Join us in collaboration efforts to co-develop peripheral systems.
                     Leave a legacy in building efficiency optimizing workflows for your business.</div>
                 </div>
@@ -69,7 +69,7 @@ const styles = ({
         color: constants.fjord,
         fontSize: 16,
         letterSpacing: 1,
-        marginBottom: 20,
+        marginBottom: 10,
     },
     home2Subtitle: {
         fontFamily: 'raleway-bold',

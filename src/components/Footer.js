@@ -86,6 +86,7 @@ const styles = ({
         maxWidth: 1000,
     },
     footerColumnWrapper: {
+        margin: '40px 0 0 0',
         width: '100%',
     },
     footerEmail: {

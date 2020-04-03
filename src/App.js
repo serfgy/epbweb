@@ -9,6 +9,8 @@ import Home from './components/Home';
 import System from './components/System';
 import Mobile from './components/Mobile';
 import Bistro from './components/Bistro';
+import Downloads from './components/Downloads';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -26,6 +28,14 @@ function App() {
           <Route path='/bistro'
             render={(routeProps) => (
               <Bistro {...routeProps} />
+            )} />
+          <Route path='/downloads'
+            render={(routeProps) => (
+              <Downloads {...routeProps} />
+            )} />
+          <Route path='/contact'
+            render={(routeProps) => (
+              <Contact {...routeProps} />
             )} />
           <Route path='/'
             render={(routeProps) => (

@@ -18,12 +18,12 @@ class Home1 extends Component {
 
         return (
             <div style={styles.home1}>
-                <div style={styles.product}><span style={styles.product2}>epb</span><span className='clip-text'>OS</span><span style={styles.product3}>®</span></div>
-                <div style={styles.slogan}>The Operating System</div>
-                <div style={styles.slogan}>for your business.</div>
-                <div style={styles.afterSlogan}>Navigate the evolving future confidently with state of the art integrated ERP.</div>
+                <div style={styles.product} className='mobile-size-1'><span style={styles.product2} className='mobile-size-2'>epb</span><span className='clip-text'>OS</span><span style={styles.product3}>®</span></div>
+                <div style={styles.slogan} className='mobile-size-3'>The Operating System</div>
+                <div style={styles.slogan} className='mobile-size-3'>for your business.</div>
+                <div style={styles.afterSlogan}>Navigate the evolving landscape confidently with our state of the art integrated ERP.</div>
                 <div style={styles.buttonsContainer}>
-                    <div style={styles.button}>REQUEST A DEMO</div>
+                    <div style={styles.button}>CONTACT US NOW</div>
                     <div style={styles.buttonReverse}>OUR SOLUTIONS</div>
                 </div>
             </div>
@@ -35,29 +35,24 @@ const styles = ({
     home1: {
         width: '100%',
         maxWidth: 1000,
-        height: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        marginBottom: 100,
     },
     product: {
         fontFamily: 'segoeui-light',
-        fontSize: 128,
     },
     product2: {
         fontFamily: 'velocity',
-        fontSize: 84,
         margin: '0 0 0 20px',
     },
     product3: {
         fontFamily: 'lato-regular',
         fontSize: 20,
-        verticalAlign: 84,
     },
     slogan: {
         fontFamily: 'raleway-bold',
-        fontSize: 64,
-        margin: '0 0 0 20px',
+        margin: '0 20px 0 20px',
     },
     afterSlogan: {
         fontFamily: 'lato-regular',
@@ -67,7 +62,7 @@ const styles = ({
         marginTop: 20,
         maxWidth: 1000,
         lineHeight: 1.5,
-        margin: '20px 0 0 20px',
+        margin: '20px 20px 0 20px',
     },
     buttonsContainer: {
         display: 'flex',

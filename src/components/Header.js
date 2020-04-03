@@ -33,7 +33,7 @@ class Header extends Component {
                         <Link to="/bistro" style={{ textDecoration: 'none', color: 'black' }}>bistroPOS</Link>
                     </div>
                     <div style={styles.headerTitle} className='header-col'>
-                        <Link to="/download" style={{ textDecoration: 'none', color: 'black' }}>Download</Link>
+                        <Link to="/downloads" style={{ textDecoration: 'none', color: 'black' }}>Downloads</Link>
                     </div>
                     <div style={styles.headerTitle} className='header-col'>
                         <Link to="/contact" style={{ textDecoration: 'none', color: 'black' }}>Contact</Link>

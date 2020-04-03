@@ -18,10 +18,11 @@ class Bistro1 extends Component {
 
         return (
             <div style={styles.bistro1}>
-                <div style={styles.product}><span style={styles.product2}>bistro</span><span className='clip-text'>POS</span><span style={styles.product3}>®</span></div>
-                <div style={styles.slogan}>When running isn't enough.</div>
-                <div style={styles.slogan}>You have to wing it.</div>
-                <div style={styles.afterSlogan}>Cover all the bases with our integrated restaurant POS.</div>
+                <div style={styles.product} className='mobile-size-1'><span style={styles.product2} className='mobile-size-2'>bistro</span><span className='clip-text'>POS</span><span style={styles.product3}>®</span></div>
+                <div style={styles.slogan} className='mobile-size-3'>When running</div>
+                <div style={styles.slogan} className='mobile-size-3'>isn't enough.</div>
+                <div style={styles.slogan} className='mobile-size-3'>You have to wing it.</div>
+                <div style={styles.afterSlogan}>Go the extra mile with our integrated restaurant POS so you can provide the best service to your customers.</div>
                 <div style={styles.buttonsContainer}>
                     <div style={styles.button}>REQUEST A DEMO</div>
                     <div style={styles.buttonReverse}>OUR SOLUTIONS</div>
@@ -35,29 +36,24 @@ const styles = ({
     bistro1: {
         width: '100%',
         maxWidth: 1000,
-        height: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        marginBottom: 100,
     },
     product: {
         fontFamily: 'segoeui-light',
-        fontSize: 128,
     },
     product2: {
         fontFamily: 'velocity',
-        fontSize: 84,
         margin: '0 0 0 20px',
     },
     product3: {
         fontFamily: 'lato-regular',
         fontSize: 20,
-        verticalAlign: 84,
     },
     slogan: {
         fontFamily: 'raleway-bold',
-        fontSize: 64,
-        margin: '0 0 0 20px',
+        margin: '0 20px 0 20px',
     },
     afterSlogan: {
         fontFamily: 'lato-regular',
@@ -67,7 +63,7 @@ const styles = ({
         marginTop: 20,
         maxWidth: 1000,
         lineHeight: 1.5,
-        margin: '20px 0 0 20px',
+        margin: '20px 20px 0 20px',
     },
     buttonsContainer: {
         display: 'flex',
