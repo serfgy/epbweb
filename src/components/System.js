@@ -3,7 +3,9 @@ import '../index.css';
 import constants from './constants/constants';
 import { AntDesign } from 'react-web-vector-icons';
 import Header from './Header';
+import System0 from './System0';
 import System1 from './System1';
+import System4 from './System4';
 import Footer from './Footer';
 
 class System extends Component {
@@ -23,6 +25,8 @@ class System extends Component {
             <div style={styles.system}>
                 <Header />
                 <System1 />
+                <System4 />
+                <System0 />
                 <Footer />
             </div>
         )

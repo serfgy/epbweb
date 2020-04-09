@@ -6,6 +6,7 @@ import Header from './Header';
 import Bistro0 from './Bistro0';
 import Bistro1 from './Bistro1';
 import Bistro3 from './Bistro3';
+import Bistro4 from './Bistro4';
 import Footer from './Footer';
 
 class Bistro extends Component {
@@ -25,6 +26,7 @@ class Bistro extends Component {
             <div style={styles.bistro}>
                 <Header />
                 <Bistro1 />
+                <Bistro4 />
                 <Bistro3 />
                 <Bistro0 />
                 <Footer />
@@ -39,6 +41,7 @@ const styles = ({
         flexDirection: 'column',
         width: '100%',
         alignItems: 'center',
+        overflow: 'hidden',
     },
 });
 
