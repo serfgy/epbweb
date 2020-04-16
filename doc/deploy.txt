@@ -1,0 +1,14 @@
+
+cd ~/Work/GIT/epbweb
+git checkout .
+git pull
+rm -rf build/
+npm i && npm run build
+echo 123 | sudo -S mv /var/www/epbweb/config.js /var/www/epbweb.config.js
+echo 123 | sudo -S rm -rf /var/www/epbweb
+echo 123 | sudo -S cp -r build/ /var/www/epbweb
+echo 123 | sudo -S mv /var/www/epbweb.config.js /var/www/epbweb/config.js
+echo 123 | sudo -S service nginx restart
+echo 123 | sudo -S nginx -t
+
+

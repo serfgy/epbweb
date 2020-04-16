@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
@@ -12,10 +12,12 @@ import Bistro from './components/Bistro';
 import Downloads from './components/Downloads';
 import Contact from './components/Contact';
 
+const _basename = window.epbwebConfig.basename;
+
 function App() {
   return (
     <div style={styles.app}>
-      <Router>
+      <Router basename={_basename}>
         <Switch>
           <Route path='/system'
             render={(routeProps) => (
