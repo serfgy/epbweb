@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+.header-mobile-menu {
+  display: normal;
+}
+
 .footer-col {
   float: left;
   width: 100%;
@@ -45,6 +49,10 @@ code {
 
 @media only screen and (min-width: 768px) {
   /* For everything bigger than 768px */
+  .header-mobile-menu {
+    display: none;
+  }
+
   .footer-col {
     width: 33.33%;
   }
@@ -154,4 +162,13 @@ code {
   color: transparent;
   background-image: url("https://c4.wallpaperflare.com/wallpaper/108/760/31/colorful-painting-artwork-swirl-wallpaper-preview.jpg");
   background-size: contain;
+}
+
+.menu-display-none{
+  display: none;
+}
+
+.menu-display-normal{
+  display: normal;
+  filter: drop-shadow(0 0 0.75rem rgb(209,209,214)),
 }

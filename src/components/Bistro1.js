@@ -107,14 +107,17 @@ const styles = ({
         position: 'absolute',
         top: 25,
         left: 75,
-        filter: 'drop-shadow(0 0 0.75rem rgb(255,212,38))',
+        // filter: 'drop-shadow(0 0 0.75rem rgb(255,212,38))',
+        boxShadow: '0px 0px 15px 5px rgb(255,212,38)',
+
     },
     image2: {
         width: '140%',
         position: 'absolute',
         top: 125,
         left: 25,
-        filter: 'drop-shadow(0 0 0.75rem rgb(255,100,130))',
+        // filter: 'drop-shadow(0 0 0.75rem rgb(255,100,130))',
+        boxShadow: '0px 0px 15px 5px rgb(255,100,130)',
         zIndex: 2,
     },
 });

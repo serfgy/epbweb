@@ -107,14 +107,16 @@ const styles = ({
     image1: {
         margin: '40px 0 0 0',
         width: '50%',
-        filter: 'drop-shadow(0 0 0.75rem rgb(48,219,91))',
+        // filter: 'drop-shadow(0 0 0.75rem rgb(48,219,91))',
+        boxShadow: '0px 0px 15px 5px rgb(48,219,91)',
     },
     image2: {
         width: '50%',
         position: 'absolute',
         top: 125,
         right: 25,
-        filter: 'drop-shadow(0 0 0.75rem rgb(255,212,38))',
+        // filter: 'drop-shadow(0 0 0.75rem rgb(255,212,38))',
+        boxShadow: '0px 0px 15px 5px rgb(255,212,38)',
         zIndex: -1,
     },
     image3: {
@@ -122,7 +124,8 @@ const styles = ({
         position: 'absolute',
         top: 125,
         left: 25,
-        filter: 'drop-shadow(0 0 0.75rem rgb(255,100,130))',
+        // filter: 'drop-shadow(0 0 0.75rem rgb(255,100,130))',
+        boxShadow: '0px 0px 15px 5px rgb(255,100,130)',
         zIndex: -1,
     },
 });
