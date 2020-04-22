@@ -109,7 +109,7 @@ const styles = ({
         left: 75,
         // filter: 'drop-shadow(0 0 0.75rem rgb(255,212,38))',
         boxShadow: '0px 0px 15px 5px rgb(255,212,38)',
-
+        borderRadius: 5,
     },
     image2: {
         width: '140%',
@@ -119,6 +119,7 @@ const styles = ({
         // filter: 'drop-shadow(0 0 0.75rem rgb(255,100,130))',
         boxShadow: '0px 0px 15px 5px rgb(255,100,130)',
         zIndex: 2,
+        borderRadius: 5,
     },
 });
 

@@ -109,6 +109,7 @@ const styles = ({
         width: '50%',
         // filter: 'drop-shadow(0 0 0.75rem rgb(48,219,91))',
         boxShadow: '0px 0px 15px 5px rgb(48,219,91)',
+        borderRadius: 5,
     },
     image2: {
         width: '50%',
@@ -118,6 +119,7 @@ const styles = ({
         // filter: 'drop-shadow(0 0 0.75rem rgb(255,212,38))',
         boxShadow: '0px 0px 15px 5px rgb(255,212,38)',
         zIndex: -1,
+        borderRadius: 5,
     },
     image3: {
         width: '50%',
@@ -127,6 +129,7 @@ const styles = ({
         // filter: 'drop-shadow(0 0 0.75rem rgb(255,100,130))',
         boxShadow: '0px 0px 15px 5px rgb(255,100,130)',
         zIndex: -1,
+        borderRadius: 5,
     },
 });
 
