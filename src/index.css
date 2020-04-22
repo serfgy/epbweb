@@ -163,12 +163,3 @@ code {
   background-image: url("https://c4.wallpaperflare.com/wallpaper/108/760/31/colorful-painting-artwork-swirl-wallpaper-preview.jpg");
   background-size: contain;
 }
-
-.menu-display-none{
-  display: none;
-}
-
-.menu-display-normal{
-  display: normal;
-  filter: drop-shadow(0 0 0.75rem rgb(209,209,214)),
-}

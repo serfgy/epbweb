@@ -10,34 +10,48 @@ class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            menu: false,
+            mobileMenu: false,
+            languageMenu: false,
         };
     }
 
     componentDidMount() {
     }
 
-    toggleMenuDisplay() {
-        const { menu } = this.state;
-        if (menu) {
+    toggleMobileMenuDisplay() {
+        const { mobileMenu } = this.state;
+        if (mobileMenu) {
             this.setState({
-                menu: false,
+                mobileMenu: false,
             })
         } else {
             this.setState({
-                menu: true,
+                mobileMenu: true,
+            })
+        }
+    }
+
+    toggleLanguageMenuDisplay() {
+        const { languageMenu } = this.state;
+        if (languageMenu) {
+            this.setState({
+                languageMenu: false,
+            })
+        } else {
+            this.setState({
+                languageMenu: true,
             })
         }
     }
 
     render() {
-        const { menu } = this.state;
+        const { languageMenu, mobileMenu } = this.state;
         console.log('render header');
 
         return (
             <div style={styles.header}>
                 {
-                    menu &&
+                    mobileMenu &&
                     <div style={styles.headerMobileMenu}>
                         <Link to="/mobile" style={{ textDecoration: 'none', color: 'black' }}>
                             <div style={styles.headerMobileMenuSelection}>
@@ -59,6 +73,21 @@ class Header extends Component {
                                 Contact
                             </div>
                         </Link>
+                        <div style={styles.headerMobileMenuLanguages}>
+                            <div style={styles.languageAlt}>EN</div>
+                            <div style={styles.language}><b>简</b></div>
+                            <div style={styles.language}><b>繁</b></div>
+                        </div>
+                    </div>
+                }
+                {
+                    languageMenu &&
+                    <div style={styles.headerLanguageMenu}>
+                        <div style={styles.headerMobileMenuLanguages}>
+                            <div style={styles.languageAlt}>EN</div>
+                            <div style={styles.language}><b>简</b></div>
+                            <div style={styles.language}><b>繁</b></div>
+                        </div>
                     </div>
                 }
                 <div style={styles.logo}><Link to='/' style={{ textDecoration: 'none', color: 'black' }}>epb</Link></div>
@@ -78,12 +107,19 @@ class Header extends Component {
                     <div style={styles.headerTitle} className='header-col'>
                         <Link to="/contact" style={{ textDecoration: 'none', color: 'black' }}>Contact</Link>
                     </div>
-                    <div style={styles.headerMobileMenuIcon} className='header-mobile-menu'
-                        onClick={() => this.toggleMenuDisplay()}>
-                        <div style={{ width: 24, height: 4, borderRadius: 2, backgroundColor: 'black',  }}></div>
-                        <div style={{ width: 24, height: 4, borderRadius: 2, backgroundColor: 'black', margin: '4px 0 4px 0' }}></div>
-                        <div style={{ width: 24, height: 4, borderRadius: 2, backgroundColor: 'black',}}></div>
+                    <div style={styles.headerTitle} className='header-col'
+                        onClick={() => this.toggleLanguageMenuDisplay()}>
+                        <div style={styles.headerTitleLanguage}>EN</div>
                     </div>
+                    <div style={styles.headerMobileMenuIcon} className='header-mobile-menu'
+                        onClick={() => this.toggleMobileMenuDisplay()}>
+                        <div style={styles.headerMobileMenuIconWrapper}>
+                            <div style={{ width: 24, height: 4, borderRadius: 2, backgroundColor: 'black', }}></div>
+                            <div style={{ width: 24, height: 4, borderRadius: 2, backgroundColor: 'black', margin: '4px 0 4px 0' }}></div>
+                            <div style={{ width: 24, height: 4, borderRadius: 2, backgroundColor: 'black', }}></div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         )
@@ -101,6 +137,17 @@ const styles = ({
         position: 'relative',
         // backgroundColor: 'blue'
     },
+    headerLanguageMenu: {
+        padding: '10px 0 10px 0',
+        position: 'absolute',
+        width: 160,
+        borderRadius: 10,
+        backgroundColor: 'white',
+        right: 10,
+        bottom: -60,
+        boxShadow: '0px 0px 15px 5px #D1D1D6',
+        zIndex: 10,
+    },
     headerMobileMenu: {
         padding: '10px 0 10px 0',
         position: 'absolute',
@@ -108,8 +155,9 @@ const styles = ({
         borderRadius: 10,
         backgroundColor: 'white',
         right: 10,
-        bottom: -240,
+        bottom: -300,
         boxShadow: '0px 0px 15px 5px #D1D1D6',
+        zIndex: 10,
     },
     headerMobileMenuSelection: {
         margin: '0 20px 0 0',
@@ -121,6 +169,36 @@ const styles = ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'flex-end',
+    },
+    headerMobileMenuLanguages: {
+        margin: '0 20px 0 20px',
+        fontFamily: 'raleway-bold',
+        fontSize: 16,
+        color: constants.grey3,
+        height: 60,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'flex-between',
+    },
+    language: {
+        width: 36,
+        height: 36,
+        margin: '2px 2px 2px 2px',
+        backgroundColor: 'white',
+        color: constants.grey5,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    languageAlt: {
+        width: 36,
+        height: 36,
+        margin: '2px 2px 2px 2px',
+        backgroundColor: 'white',
+        color: 'black',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     logo: {
         fontFamily: 'velocity',
@@ -143,8 +221,15 @@ const styles = ({
         color: constants.grey3,
         justifyContent: 'flex-end'
     },
+    headerTitleLanguage: {
+        color: constants.grey5
+    },
     headerMobileMenuIcon: {
         // backgroundColor: 'blue',
+        height: 64,
+        width: 64,
+    },
+    headerMobileMenuIconWrapper: {
         height: 64,
         width: 64,
         display: 'flex',
