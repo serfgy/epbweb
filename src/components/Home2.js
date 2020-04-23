@@ -43,7 +43,7 @@ class Home2 extends Component {
                         </div>
                     </div>
                 </div>
-                <div style={styles.home2Block1} className='body-col-2'>
+                <div style={styles.home2Block} className='body-col-2'>
                     <div style={styles.home2BlockWrapper}>
                         <div style={styles.home2ModulePoint}>
                             <div style={styles.home2ModuleBulletContainer}>
@@ -166,8 +166,98 @@ class Home2 extends Component {
                             <div style={styles.home2ModuleBulletText}>Finance Management</div>
                         </div>
                     </div>
+                    <div style={styles.home2BlockWrapperAlt}>
+                        <div style={styles.home2ModulePoint}>
+                            <div style={styles.home2ModuleBulletContainer}>
+                                <div style={styles.home2ModuleBullet1}></div>
+                                <div style={styles.home2ModuleBullet2}></div>
+                                <div style={styles.home2ModuleBullet3}></div>
+                            </div>
+                            <div style={styles.home2ModuleBulletText}>Office Management</div>
+                        </div>
+                        <div style={styles.home2ModulePoint}>
+                            <div style={styles.home2ModuleBulletContainer}>
+                                <div style={styles.home2ModuleBullet1}></div>
+                                <div style={styles.home2ModuleBullet2}></div>
+                                <div style={styles.home2ModuleBullet3}></div>
+                            </div>
+                            <div style={styles.home2ModuleBulletText}>3PL Management</div>
+                        </div>
+                        <div style={styles.home2ModulePoint}>
+                            <div style={styles.home2ModuleBulletContainer}>
+                                <div style={styles.home2ModuleBullet1}></div>
+                                <div style={styles.home2ModuleBullet2}></div>
+                                <div style={styles.home2ModuleBullet3}></div>
+                            </div>
+                            <div style={styles.home2ModuleBulletText}>Fixed Asset Management</div>
+                        </div>
+                        <div style={styles.home2ModulePoint}>
+                            <div style={styles.home2ModuleBulletContainer}>
+                                <div style={styles.home2ModuleBullet1}></div>
+                                <div style={styles.home2ModuleBullet2}></div>
+                                <div style={styles.home2ModuleBullet3}></div>
+                            </div>
+                            <div style={styles.home2ModuleBulletText}>Multi-Org Consolidation</div>
+                        </div>
+                        <div style={styles.home2ModulePoint}>
+                            <div style={styles.home2ModuleBulletContainer}>
+                                <div style={styles.home2ModuleBullet1}></div>
+                                <div style={styles.home2ModuleBullet2}></div>
+                                <div style={styles.home2ModuleBullet3}></div>
+                            </div>
+                            <div style={styles.home2ModuleBulletText}>EDI Management</div>
+                        </div>
+                        <div style={styles.home2ModulePoint}>
+                            <div style={styles.home2ModuleBulletContainer}>
+                                <div style={styles.home2ModuleBullet1}></div>
+                                <div style={styles.home2ModuleBullet2}></div>
+                                <div style={styles.home2ModuleBullet3}></div>
+                            </div>
+                            <div style={styles.home2ModuleBulletText}>Business Intelligence</div>
+                        </div>
+                        <div style={styles.home2ModulePoint}>
+                            <div style={styles.home2ModuleBulletContainer}>
+                                <div style={styles.home2ModuleBullet1}></div>
+                                <div style={styles.home2ModuleBullet2}></div>
+                                <div style={styles.home2ModuleBullet3}></div>
+                            </div>
+                            <div style={styles.home2ModuleBulletText}>Mobile Utility</div>
+                        </div>
+                        <div style={styles.home2ModulePoint}>
+                            <div style={styles.home2ModuleBulletContainer}>
+                                <div style={styles.home2ModuleBullet1}></div>
+                                <div style={styles.home2ModuleBullet2}></div>
+                                <div style={styles.home2ModuleBullet3}></div>
+                            </div>
+                            <div style={styles.home2ModuleBulletText}>Booking Planning</div>
+                        </div>
+                        <div style={styles.home2ModulePoint}>
+                            <div style={styles.home2ModuleBulletContainer}>
+                                <div style={styles.home2ModuleBullet1}></div>
+                                <div style={styles.home2ModuleBullet2}></div>
+                                <div style={styles.home2ModuleBullet3}></div>
+                            </div>
+                            <div style={styles.home2ModuleBulletText}>Workflow Management</div>
+                        </div>
+                        <div style={styles.home2ModulePoint}>
+                            <div style={styles.home2ModuleBulletContainer}>
+                                <div style={styles.home2ModuleBullet1}></div>
+                                <div style={styles.home2ModuleBullet2}></div>
+                                <div style={styles.home2ModuleBullet3}></div>
+                            </div>
+                            <div style={styles.home2ModuleBulletText}>Report Customization</div>
+                        </div>
+                        <div style={styles.home2ModulePoint}>
+                            <div style={styles.home2ModuleBulletContainer}>
+                                <div style={styles.home2ModuleBullet1}></div>
+                                <div style={styles.home2ModuleBullet2}></div>
+                                <div style={styles.home2ModuleBullet3}></div>
+                            </div>
+                            <div style={styles.home2ModuleBulletText}>General Master Files</div>
+                        </div>
+                    </div>
                 </div>
-                <div style={styles.home2Block1} className='body-col-2'>
+                <div style={styles.home2Block} className='body-col-2'>
                     <div style={{ height: '100%', width: '100%', position: 'relative' }}>
                         <img style={styles.imageBistro1} src={bistro1} />
                         <img style={styles.imageBistro2} src={bistro2} />
@@ -207,7 +297,7 @@ class Home2 extends Component {
                         </div>
                     </div>
                 </div>
-                <div style={styles.home2Block1} className='body-col-2'>
+                <div style={styles.home2Block} className='body-col-2'>
                     <div style={{ height: '100%', width: '100%', position: 'relative' }}>
                         <img style={styles.imageMobile1} src={mobile1} />
                         <img style={styles.imageMobile2} src={mobile2} />
@@ -226,17 +316,25 @@ const styles = ({
     },
     home2Block: {
         height: 600,
+        position: 'relative',
         // backgroundColor: 'red'
-    },
-    home2Block1: {
-        height: 600,
-        // backgroundColor: 'green'
     },
     home2BlockWrapper: {
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
+    },
+    home2BlockWrapperAlt: {
+        height: '100%',
+        position: 'absolute',
+        top: 0,
+        left: 360,
+        right: -600,
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        opacity: 0.6,
     },
     home2Left: {
         display: 'flex',
