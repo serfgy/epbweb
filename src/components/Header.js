@@ -63,11 +63,11 @@ class Header extends Component {
                                 bistroPOS
                             </div>
                         </Link>
-                        <Link to="/downloads" style={{ textDecoration: 'none', color: 'black' }}>
+                        <a href='https://www.epbrowser.com/install' style={{ textDecoration: 'none', color: 'black' }}>
                             <div style={styles.headerMobileMenuSelection}>
                                 Downloads
                             </div>
-                        </Link>
+                        </a>
                         <Link to="/contact" style={{ textDecoration: 'none', color: 'black' }}>
                             <div style={styles.headerMobileMenuSelection}>
                                 Contact
@@ -102,7 +102,7 @@ class Header extends Component {
                         <Link to="/bistro" style={{ textDecoration: 'none', color: 'black' }}>bistroPOS</Link>
                     </div>
                     <div style={styles.headerTitle} className='header-col'>
-                        <Link to="/downloads" style={{ textDecoration: 'none', color: 'black' }}>Downloads</Link>
+                        <a href='https://www.epbrowser.com/install' style={{ textDecoration: 'none', color: 'black' }}>Downloads</a>
                     </div>
                     <div style={styles.headerTitle} className='header-col'>
                         <Link to="/contact" style={{ textDecoration: 'none', color: 'black' }}>Contact</Link>
