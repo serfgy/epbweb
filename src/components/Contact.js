@@ -55,15 +55,15 @@ class Contact extends Component {
                                 <div style={styles.branchTitle}>Shanghai</div>
                                 <div style={styles.branchAddress}>Changlin Road, Baoshen District</div>
                                 <div style={styles.branchAddress}>Room 5014, No. 913</div>
-                                <div style={styles.branchPhone}>+ 86 21 6386 8208</div>
+                                <div style={styles.branchPhone}>+86 21 6386 8208</div>
                                 <div style={styles.image2}></div>
                             </div>
                             <div style={styles.branchContainer}>
                                 <div style={styles.branchTitle}>Taipei</div>
-                                <div style={styles.branchAddress}>Sec 1, Keelung Rd, Xinyi District</div>
-                                <div style={styles.branchAddress}>Room 1201, 12F, No. 333</div>
-                                <div style={styles.branchAddress}>Taipei 11012</div>
-                                <div style={styles.branchPhone}>+ 886 2 2361 9781</div>
+                                <div style={styles.branchAddress}>7F.-2, No.57, Sec. 1,</div>
+                                <div style={styles.branchAddress}>Chongqing S. Rd., Zhongzheng Dist.,</div>
+                                <div style={styles.branchAddress}>Taipei City 100, Taiwan</div>
+                                <div style={styles.branchPhone}>+886-2-2371-8990</div>
                                 <div style={styles.image3}></div>
                             </div>
                         </div>
