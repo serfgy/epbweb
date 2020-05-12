@@ -53,9 +53,10 @@ class Contact extends Component {
                             </div>
                             <div style={styles.branchContainer}>
                                 <div style={styles.branchTitle}>Shanghai</div>
-                                <div style={styles.branchAddress}>Changlin Road, Baoshen District</div>
-                                <div style={styles.branchAddress}>Room 5014, No. 913</div>
-                                <div style={styles.branchPhone}>+86 21 6386 8208</div>
+                                <div style={styles.branchAddress}>Room 802, Building A</div>
+                                <div style={styles.branchAddress}>No.230, Xijiangwan Road</div>
+                                <div style={styles.branchAddress}>Hongkou District, Shanghai China</div>
+                                <div style={styles.branchPhone}>+86 21 5182 6753</div>
                                 <div style={styles.image2}></div>
                             </div>
                             <div style={styles.branchContainer}>
